@@ -2,13 +2,13 @@
 # It is defined by the kaggle/python docker image: https://github.com/kaggle/docker-python
 # For example, here's several helpful packages to load in
 
-import numpy as np  # linear algebra
-import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
+import numpy as np  # linear algebra  计算
+import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)数据预处理
 
 # Input data files are available in the "../input/" directory.
 # For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
 
-import os
+import os #处理文件和目录
 
 for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
@@ -24,9 +24,9 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 import pandas as pd
 import numpy as np
 import os, gc
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.model_selection import GroupKFold
+import matplotlib.pyplot as plt #数据可视化
+import seaborn as sns  #提供绘制统计图形的高级接口
+from sklearn.model_selection import GroupKFold  #包含机器学习开发的各个方面
 from sklearn.metrics import roc_auc_score
 
 # path
